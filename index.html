@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Todo List</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+<body>
+  
+    <div class="container-fluid">
+      <h1>APPOINTMENT APP </h1>
+        <div class="container">
+          
+            <div class="mx-auto" style="max-width: 700px;">
+            <div class="input-group mb-3">
+              
+                <input type="text" class="form-control" placeholder="name" id="userName" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <input type="text" class="form-control" placeholder="email" id="emailId" aria-label="Recipient's email id" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button" id="addUser" style="background-color: rgb(30, 63, 212);">Add User</button>
+                </div>
+              
+              </div>
+       
+        <div class="display">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">S.no.</th>
+                    <th scope="col">Your Name</th>
+                    <th scope="col">Email Id</th>
+                  </tr>
+                </thead>
+                <tbody id="records">
+                  <!-- <tr>
+                    <th scope="row">1</th>
+                    <td>King Of JavaScript</td>
+                    <td><i class="btn text-whilte fa fa-edit btn-info mx-3"></i><i class="btn btn-danger text white fa fa-trash"></i></td>
+                  </tr> -->
+                </tbody>
+              </table>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
